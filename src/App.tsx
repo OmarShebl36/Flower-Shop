@@ -1,9 +1,7 @@
-function App() {
-  return (
-    <p className="text-2xl text-center">
-      Hello World!
-    </p>
-  )
-}
+import React from "react"
 
-export default App
+const App = () => {
+  return <div>App</div>;
+};
+
+export default App;
