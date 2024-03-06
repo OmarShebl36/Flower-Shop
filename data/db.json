@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "address": "123 Main Street"
+    },
+    {
+      "id": "2",
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "password": "password456",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "address": "456 Elm Street"
+    },
+    {
+      "id": "3",
+      "username": "bob_jackson",
+      "email": "bob@example.com",
+      "password": "password789",
+      "firstName": "Bob",
+      "lastName": "Jackson",
+      "address": "789 Oak Street"
+    },
+    {
+      "id": "4",
+      "username": "lisa_johnson",
+      "email": "lisa@example.com",
+      "password": "password789",
+      "firstName": "Lisa",
+      "lastName": "Johnson",
+      "address": "789 Pine Street"
+    },
+    {
+      "id": "5",
+      "username": "mike_brown",
+      "email": "mike@example.com",
+      "password": "password987",
+      "firstName": "Mike",
+      "lastName": "Brown",
+      "address": "987 Maple Street"
+    },
+    {
+      "id": "6",
+      "username": "sarah_wilson",
+      "email": "sarah@example.com",
+      "password": "password654",
+      "firstName": "Sarah",
+      "lastName": "Wilson",
+      "address": "654 Cedar Street"
+    },
+    {
+      "id": "7",
+      "username": "adam_taylor",
+      "email": "adam@example.com",
+      "password": "password321",
+      "firstName": "Adam",
+      "lastName": "Taylor",
+      "address": "321 Birch Street"
+    },
+    {
+      "id": "8",
+      "username": "emily_rodriguez",
+      "email": "emily@example.com",
+      "password": "password135",
+      "firstName": "Emily",
+      "lastName": "Rodriguez",
+      "address": "135 Walnut Street"
+    }
+  ],
+
+  "products": [
+    {
+      "id": "1",
+      "name": "Rose Bouquet",
+      "image": "rose.jpg",
+      "price": 29.99,
+      "discount": 0,
+      "description": "A beautiful bouquet of red roses, perfect for expressing love and affection.",
+      "count": 1,
+      "qty": 1,
+      "category": "Flowers"
+    },
+    {
+      "id": "2",
+      "name": "Tulip Bundle",
+      "image": "tulip.jpg",
+      "price": 19.99,
+      "discount": 10,
+      "description": "Vibrant tulips in assorted colors, ideal for brightening up any room.",
+      "count": 1,
+      "qty": 1,
+      "category": "Flowers"
+    },
+    {
+      "id": "3",
+      "name": "Sunflower Arrangement",
+      "image": "sunflower.jpg",
+      "price": 39.99,
+      "discount": 5,
+      "description": "A cheerful arrangement of sunflowers, guaranteed to bring a smile to anyone's face.",
+      "count": 1,
+      "qty": 1,
+      "category": "Flowers"
+    },
+    {
+      "id": "4",
+      "name": "Lily Bouquet",
+      "image": "lily.jpg",
+      "price": 24.99,
+      "discount": 0,
+      "description": "Elegant lilies in assorted colors, symbolizing purity and renewal.",
+      "count": 1,
+      "qty": 1,
+      "category": "Flowers"
+    },
+    {
+      "id": "5",
+      "name": "Orchid Plant",
+      "image": "orchid.jpg",
+      "price": 49.99,
+      "discount": 15,
+      "description": "A potted orchid plant, known for its beauty and longevity, perfect for gifting or home decor.",
+      "count": 1,
+      "qty": 1,
+      "category": "Flowers"
+    }
+  ]
+}
