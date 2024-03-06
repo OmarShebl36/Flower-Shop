@@ -1,0 +1,95 @@
+.fs-button {
+  width: 175px;
+  padding: 16px 24px 14px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+
+  &.fs-button--primary {
+    background-color: $color-black;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-dark-gray;
+    }
+
+    &:active {
+      background-color: $color-black;
+    }
+
+    &:disabled {
+      background-color: $color-light-gray;
+    }
+  }
+
+  &.fs-button--secondary {
+    background-color: $color-white;
+    color: $color-black;
+    border: 1px solid $color-black;
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
+
+    &:active {
+      background-color: $color-white;
+      color: $color-black;
+    }
+
+    &:disabled {
+      border-color: $color-light-gray;
+      color: $color-gray;
+    }
+  }
+
+  &.fs-button--tertiary {
+    background-color: transparent;
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+    }
+
+    &:active {
+      background-color: $color-white;
+      color: $color-black;
+    }
+
+    &:disabled {
+      border-color: $color-light-gray;
+      color: $color-gray;
+    }
+  }
+
+  &:hover .fs-button__text {
+    transform: rotateX(90deg);
+  }
+
+  &:hover .fs-button__text-hovered {
+    transform: translateY(-4vh);
+  }
+}
+
+.fs-button__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 5vh;
+}
+
+.fs-button__text {
+  //   transform: rotateY(90deg);
+  transform-style: preserve-3d;
+  transition: 0.4s;
+}
+
+.fs-button__text-hovered {
+  transform-style: preserve-3d;
+  transition: 0.4s;
+}
