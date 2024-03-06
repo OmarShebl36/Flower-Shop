@@ -33,7 +33,7 @@ const Button = ({
     >
       <div className="fs-button__text-wrapper">
         <span className="fs-button__text">{text}</span>
-        <span className="fs-button__text-hoverd">{text}</span>
+        <span className="fs-button__text-hovered">{text}</span>
         </div>
     </button>
   );

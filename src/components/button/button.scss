@@ -6,6 +6,7 @@
   align-items: center;
   cursor: pointer;
   transition: 0.4s;
+  overflow: hidden;
 
   &.fs-button--primary {
     background-color: $color-black;
@@ -14,33 +15,81 @@
     &:hover {
       background-color: $color-dark-gray;
     }
+
+    &:active {
+      background-color: $color-black;
+    }
+
+    &:disabled {
+      background-color: $color-light-gray;
+    }
   }
 
-  &:hover > .fs-button__text-wrapper {
-    transform: translateY(4ox);
+  &.fs-button--secondary {
+    background-color: $color-white;
+    color: $color-black;
+    border: 1px solid $color-black;
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
+
+    &:active {
+      background-color: $color-white;
+      color: $color-black;
+    }
+
+    &:disabled {
+      border-color: $color-light-gray;
+      color: $color-gray;
+    }
+  }
+
+  &.fs-button--tertiary {
+    background-color: transparent;
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+    }
+
+    &:active {
+      background-color: $color-white;
+      color: $color-black;
+    }
+
+    &:disabled {
+      border-color: $color-light-gray;
+      color: $color-gray;
+    }
+  }
+
+  &:hover .fs-button__text {
+    transform: rotateX(90deg);
+  }
+
+  &:hover .fs-button__text-hovered {
+    transform: translateY(-4vh);
   }
 }
 
 .fs-button__text-wrapper {
-  height: 1.56vw;
-  grid-column-gap: 0.139vw;
-  grid-row-gap: 0.139vw;
-  flex-direction: column;
-  flex: none;
-  justify-content: flex-start;
-  align-items: flex-start;
   display: flex;
+  flex-direction: column;
   overflow: hidden;
+  height: 5vh;
 }
 
 .fs-button__text {
-  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  //   transform: rotateY(90deg);
   transform-style: preserve-3d;
+  transition: 0.4s;
 }
 
-.fs-button__text-hoverd {
-  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+.fs-button__text-hovered {
   transform-style: preserve-3d;
+  transition: 0.4s;
 }
